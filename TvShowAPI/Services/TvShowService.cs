@@ -50,7 +50,8 @@ public class TvShowService : ITvShowService {
 
     public async Task<IEnumerable<TvShow>> GetByFavouriteAsync() {
         using var connection = await _connectionFactory.CreateConnectionAsync();
-        return await connection.QueryAsync<TvShow>("SELECT * FROM TvShows WHERE Favourite = 1");
+        var t= await connection.QueryAsync<TvShow>("select * from TvShows where Favourite = 1 ");
+        return t;
     }
 
     public async Task<IEnumerable<TvShow>> SearchByTitleAsync(string title) {

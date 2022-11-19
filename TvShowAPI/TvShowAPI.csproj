@@ -11,6 +11,7 @@
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
       <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
