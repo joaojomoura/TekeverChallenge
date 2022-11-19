@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvShowAPI", "TvShowAPI\TvShowAPI.csproj", "{5F3F3629-7D9A-452D-AB85-C776E25C0DD2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62203454-819C-479F-9BA5-C5B38B31EB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvShowAPI.Tests.Integration", "TvShowAPI.Tests.Integration\TvShowAPI.Tests.Integration.csproj", "{6E810924-53A5-4994-BE08-9C74FDE2DCB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,12 @@ Global
 		{5F3F3629-7D9A-452D-AB85-C776E25C0DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3F3629-7D9A-452D-AB85-C776E25C0DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3F3629-7D9A-452D-AB85-C776E25C0DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E810924-53A5-4994-BE08-9C74FDE2DCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E810924-53A5-4994-BE08-9C74FDE2DCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E810924-53A5-4994-BE08-9C74FDE2DCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E810924-53A5-4994-BE08-9C74FDE2DCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E810924-53A5-4994-BE08-9C74FDE2DCB4} = {62203454-819C-479F-9BA5-C5B38B31EB29}
 	EndGlobalSection
 EndGlobal
