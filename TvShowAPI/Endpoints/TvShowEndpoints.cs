@@ -76,6 +76,7 @@ public class TvShowEndpoints : IEndpoints {
         .WithMetadata(new SwaggerOperationAttribute("Delete TvShow","Deletes the tvshow from the database given the id"));
 
     }
+    
 
 
     internal static async Task<IResult> CreateTvshowAsync(TvShow tvShow, ITvShowService tvShowService,
@@ -100,7 +101,7 @@ public class TvShowEndpoints : IEndpoints {
     }
 
     internal static async Task<IResult> GetTvShowsOrTvShowAsync(ITvShowService tvshowService, string? title,
-        string? genre, string? showType, string? actors) {
+        string? genre, string? showType, string? getActorsFromTitle) {
         if (title is not null && !string.IsNullOrWhiteSpace(title)) {
             var matchedTvShows = await tvshowService.SearchByTitleAsync(title);
             return Results.Ok(matchedTvShows);
@@ -116,8 +117,8 @@ public class TvShowEndpoints : IEndpoints {
             return Results.Ok(matchedTvShows);
         }
         
-        if (actors is not null && !string.IsNullOrWhiteSpace(actors)) {
-            var matchedTvShows = await tvshowService.SearchByTitle_GetActors(actors);
+        if (getActorsFromTitle is not null && !string.IsNullOrWhiteSpace(getActorsFromTitle)) {
+            var matchedTvShows = await tvshowService.SearchByTitle_GetActors(getActorsFromTitle);
             return Results.Ok(matchedTvShows);
         }
         
