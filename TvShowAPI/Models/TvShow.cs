@@ -14,5 +14,5 @@ public class TvShow
 
     public string Actors { get; set; }
 
-    public int Favorite { get; set; } = 0;
+    public int Favourite { get; set; } = 0;
 }

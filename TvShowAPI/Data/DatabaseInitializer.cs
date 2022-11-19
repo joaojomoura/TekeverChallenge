@@ -21,7 +21,7 @@ public class DatabaseInitializer
                 Genre TEXT,
                 Showtype TEXT,
                 Actors TEXT,
-                Favorite BINARY                
+                Favourite INTEGER                
 )"
             );
     }
